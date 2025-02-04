@@ -64,7 +64,7 @@ const Healthcare = () => {
             
             const tx = await contract.addRecord(Number(patientID), "Alice", diagnosis, treatment,
             {
-                gasLimit: 5000000  
+                gasLimit: 50000
             });
 
             await tx.wait();
